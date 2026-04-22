@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Hora da Verdade</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* A própria pintura como fundo */
+      background-image: url('2997.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(1.4) contrast(1.1) saturate(1.2);
+    }
+
+    /* Camada escura para contraste */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 50, 0.55);
+      backdrop-filter: blur(2px);
+    }
+
+    .card {
+      position: relative;
+      width: 380px;
+      height: 520px;
+      padding: 30px;
+      border-radius: 20px;
+
+      background: rgba(10, 15, 40, 0.65);
+      box-shadow: 0 0 40px rgba(0,0,0,0.8);
+
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+    }
+
+    h1 {
+      margin-top: 70px;
+      font-size: 32px;
+      color: #ffd700;
+      text-shadow: 0 0 12px rgba(255,215,0,0.9);
+    }
+
+    p {
+      margin-top: 25px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #ffd700;
+    }
+
+    .signature {
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Feliz Aniversário Anny!</h1>
+
+    <p>
+      Que sua vida brilhe como as <span class="highlight">estrelas</span><br>
+      nesta noite mágica 🌙✨<br><br>
+      E que cada sonho seu ilumine o caminho,<br>
+      assim como na obra de Van Gogh.
+    </p>
+    <p>Nós meus olhos você <br>
+    sempre será a arte mais bela
+de todas</p>
+    <div class="signature">Com carinho a pessoa que você odeia💙</div>
+  </div>
+
+</body>
+</html>
